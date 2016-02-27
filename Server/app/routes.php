@@ -69,7 +69,7 @@ $app->post('/api/depots', function ($request, $response) {
             $response = $response->withStatus(400, 'email already use');
         }
     } else {
-        $response = $response->withStatus(400, 'Invalid parameter');
+        $response = $response->withStatus(400, 'Invalid parameters');
     }
     return $response;
 });

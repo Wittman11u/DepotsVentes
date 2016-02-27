@@ -1,8 +1,9 @@
 <!doctype html>
-<html ng-app="depotsventes">
+<html ng-app="DepotVente">
 <head>
     <meta charset="UTF-8">
-    <title>La Remise</title>
+    <title>Dépôts ventes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <script src="angular/angular.min.js"></script>
     <script src="angular/angular-animate.min.js"></script>
     <script src="angular/angular-resource.min.js"></script>
@@ -10,18 +11,28 @@
     <script src="angular/angular-sanitize.min.js"></script>
 
     <script src="app/app.js"></script>
+    <script type="text/javascript" src="app/controllers/depot_controller.js"></script>
+    <script type="text/javascript" src="app/resources/depot_resource.js"></script>
 
     <link rel="stylesheet" href="style/main.css">
 
 </head>
-<body>
-<div ng-controller="menuController">
-    <h1>Appli dépôts ventes</h1>
-
+<body class="col-md-12 col-sm-12">
+<div class="page-header">
+    <a class="col-md-2 col-sm-3" ng-href="#/"><!-- <img src="images/logo.png" alt="Logo"/> -->Logoo Dépôt/Vente</a>
+    <a class="col-md-offset-8 col-sm-offset-7" ng-href="#/">Se déconnecter</a>
+    <div class="container">
+        <nav class="navbar navbar-inverse">
+            <ul class="nav navbar-nav">
+                <li><a ng-href="#/depot/new"><strong>Dépôt</strong></a></li>
+                <li><a ng-href="#/vente"><strong>Vente</strong></a></li>
+                <li><a ng-href="#/admin/config"><strong>Admin</strong></a></li>
+            </ul>
+        </nav>
+    </div>
 </div>
 
-<div id="main-content" ng-view>
-
+<div ng-view>
 </div>
 </body>
 </html>
