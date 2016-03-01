@@ -20,7 +20,7 @@ $app->get('/api/depots/{id}', function ($request, $response, $args) {
 });
 
 
-$app->get('/api/sellss/{id}', function ($request, $response, $args) {
+$app->get('/api/sells/{id}', function ($request, $response, $args) {
     $id = $args['id'];
     $response = $response->withHeader("Access-Control-Allow-Origin", "*");
     $response = $response->withHeader("Access-Control-Allow-Methods", "GET");

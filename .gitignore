@@ -1,4 +1,5 @@
 .idea
 vendor
 composer.lock
-main.css*
+main.css.*
+.sass-cache
