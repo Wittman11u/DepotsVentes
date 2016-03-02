@@ -1,5 +1,5 @@
 window.urlAPI = "http://localhost/DepotsVentes/Server/api/";
-var app = angular.module("DepotVente", ['ngResource', 'ngRoute', 'ngSanitize']);
+var app = angular.module("DepotVente", ['ngResource', 'ngRoute', 'ngSanitize', 'ngMessages']);
 
 app.config(['$routeProvider', function ($routeProvider) {
     $routeProvider.when('/', {templateUrl: "app/templates/connexion.html", controller: "connexionController"});
