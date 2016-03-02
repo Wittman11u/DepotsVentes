@@ -1,5 +1,4 @@
-angular.module("DepotVente").controller('VenteController',['$scope', 'Vente'
-	function($scope, Vente){
+angular.module("DepotVente").controller('VenteController',['$scope', 'Vente', function($scope, Vente){
 		
 		// $scope.vente = Vente.get();
 		$scope.objet="";
